@@ -1,0 +1,800 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/*遮罩层*/
+#pageOverlay { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:1000; 
+	width:100%; 
+	height:100%; 
+	background:#606060; 
+	filter:alpha(opacity=70); 
+	opacity:0.7; 
+	display: none; 
+}
+/*消息类型*/
+.pop-box{
+	width: 100%; 
+	min-height: 10px; 
+	overflow: hidden; 
+	padding: 20px 0; 
+	background: #f0f0f0; 
+	position:absolute; 
+	top: 85px;
+	display: none;
+	z-index: 1001;
+}
+.pop-box ul li{
+	width: 30%; 
+	height: 78px; 
+	line-height: 78px; 
+	font-size: 2.7em; 
+	text-align: center; 
+	border: 1px solid #d9d6d6; 
+	border-radius: 5px; 
+	background: #fff; 
+	float: left; 
+	margin: 0 1.5% 10px 1.5%; 
+	color: #9c9a9a;
+}
+.pop-box ul li.active{
+	border:1px solid #fa6604; 
+	color: #fa6604;
+}
+
+/*消息中心*/
+.header-nav ,.news-box-time,.news-box ul li{
+	padding: 0 5%;
+}
+.header-nav ,.header-nav a{
+	height: 85px;
+	line-height: 85px;
+}
+.header-nav{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background-color: #ff8400;
+	width:90%;
+	color: #fff;
+}
+.header-nav a.back{
+	float: left;
+	display: block;
+	width: 39px;
+	margin-right: 2%;
+}
+.header-nav p{
+	font-size: 1.7rem;
+}
+
+.main{
+	width: 100%;
+	min-height: 50px;
+	background-color: #ededed;
+	padding-bottom: 90px;
+}
+.index-main{
+	margin-top: 85px;
+}
+.deposit-main{
+	margin-top: 210px;
+}
+.news-box-time{
+	height: 50px;
+	line-height: 50px;
+	color: #606060;
+	font-weight: normal;
+	background-color: #ededed;
+}
+.news-box , .news-box ul{
+	min-height: 10px;
+}
+.news-box ul li, .news-box-li-right{
+	min-height: 10px;
+	overflow: hidden;
+}
+.news-box ul li{
+	padding-bottom: 25px;
+	border-bottom: 2px solid #ededed;
+	background-color: #fff;
+}
+.news-box ul li img.icon,.news-box-li-right h3{
+	margin-top: 25px;
+}
+.news-box ul li img.icon{
+	margin-right: 5%;
+	float: left;
+}
+.news-box-li-right{
+	float: left;
+	width: 85%;
+}
+.news-box-li-right h3,.news-box-li-right p{
+	font-size: 1.6rem;
+}
+.news-box-li-right h3{
+	margin-bottom: 5px;
+	line-height: 1.2em;
+	font-weight: normal;
+	color: #010101;
+}
+.news-box-li-time{
+	float: right;
+	font-size: 0.8em;
+}
+.news-box-li-right p{
+	color: #949494;
+}
+
+/*积分明细*/
+.integral-main{
+	margin-top: 55px;
+}
+.integral-nav{
+	margin-top: 85px;
+	padding: 10px 0;
+	background: #ededed;
+	height: 105px;
+}
+.integral-nav a{
+	display: block;
+	width: 32%;
+}
+.integral-nav a img{
+	width: 100%;
+	height: 105px;
+}
+.integral-nav a:nth-child(2){
+	margin: 0 2%;
+}
+.integral-top{
+	height: 110px;
+	background:#fff;
+	left: 0;
+	width: 90%;
+	padding: 10px 5%;
+}
+.integral-top h4,.deposit-top h4{
+	line-height: 39px;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+.integral-top-txt{
+	font-size: 1.2rem;
+	color: #949494;
+	clear: both;
+	margin-top: 5px;
+}
+.deposit-top{
+	position: fixed;
+	top: 85px;
+	height: 110px;
+	background:#fff;
+	left: 0;
+	width: 90%;
+	padding: 10px 5%;
+}
+.integral-balance ,.num, .deposit-num{
+	display: block;
+	color: #ff8400;
+	
+}
+.integral-balance, .deposit-num{
+	font-size: 3rem;
+	font-weight:400;
+	max-width: 40%;
+	margin: 0 auto;
+}
+.integral-balance img{
+	margin-top: 7px;
+}
+.integral-title, .num{
+	font-size: 1.6rem;
+	line-height: 75px;
+}
+.integral-title{
+	width: 60%;
+	font-weight: normal;
+	margin-right: 10%;
+}
+.integral-title span{
+	font-size: 0.8em;
+	color: #606060;
+}
+.num{
+	max-width: 30%;
+	min-width: 10%;
+	font-weight: bold;
+}
+.subtract{
+	color: #81b33e;
+}
+.num img{
+	margin-top: 17px;
+}
+/*押金明细*/
+.header-nav a.recharge{
+	display:block;
+}
+.deposit-num{
+	line-height: 3rem;
+	width:38%;
+	min-width:100px;
+}
+.deposit-txt{
+	color: #000;
+	display: block;
+	float: right;
+	font-size: 0.5em;
+	line-height: 3rem;
+}
+.deposit-left p, .deposit-right-num{
+	font-size: 1.4rem;
+	line-height: 1.4em;
+}
+.deposit-left p.deposit-time{
+	font-size: 1.2rem;
+	color: #606060;
+}
+.deposit-right-num{
+	font-weight: 600;
+}
+.orange{
+	color: #ff8400;
+	line-height:75px;
+}
+.green{
+	color:#81b33e;
+	line-height: 100px;
+}
+.deposit-left-txt{
+	color: #949494;
+}
+
+/*屏幕小于320px*/
+@media screen and (max-width:320px){
+body{
+	min-width: 320px;
+}
+.pop-box{
+	padding: 20px 0; 
+	top: 40px;
+}
+.pop-box ul li{
+	width: 29%; 
+	height: 28px; 
+	line-height: 28px; 
+	font-size: 1.4em; 
+}
+/*消息中心*/
+.index-main{
+	margin-top: 40px;
+}
+.header-nav ,.header-nav a{
+	height: 40px;
+	line-height: 40px;
+}
+.header-nav a{
+	width: 20px;
+}
+.header-nav a img{
+	height: 40px;
+}
+.header-nav p{
+	font-size: 1rem;
+}
+.news-box-time{
+	height: 25px;
+	line-height: 25px;
+	font-size: 1.2em;
+}
+.news-box ul li{
+	padding-bottom:15px;
+}
+.news-box ul li img.icon,.news-box-li-right h3{
+	margin-top: 15px;
+}
+.news-box ul li img.icon{
+	height: 20px;
+}
+.news-box-li-right h3,.news-box-li-right p{
+	font-size: 0.9rem;
+}
+
+/*积分明细*/
+.integral-main{
+	margin-top: 30px;
+}
+.integral-top{
+	height: 40px;
+}
+.deposit-top{
+	top:40px;
+	height: 40px;
+}
+.integral-nav{
+	height: 52px;
+	margin-top: 40px;
+}
+.integral-nav a img{
+	height: 52px;
+}
+.integral-top h4,.deposit-top h4{
+	line-height: 20px;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.integral-top h4 img,.deposit-top h4 img{
+	height: 20px;
+	width: 20px;
+}
+.integral-top-txt{
+	font-size: 0.55rem;
+	margin-top: 4px;
+}
+.integral-balance, .deposit-num{
+	font-size: 1.5rem;
+}
+.integral-balance img{
+	width: 30px;
+	height: 30px;
+	margin-top:2px;
+}
+.integral-title, .num{
+	font-size: 0.9rem;
+	line-height: 43px;
+}
+.num img{
+	width: 25px;
+	height: 25px;
+	margin-top: 9px;
+}
+.num img{
+	width: 25px;
+	height: 25px;
+	margin-top: 9px;
+}
+/*押金明细*/
+.deposit-main{
+	margin-top: 105px;
+}
+.deposit-num{
+	line-height: 1.5rem;
+	min-width: 40%;
+}
+.deposit-txt{
+	font-size: 0.7em;
+	line-height: 1.5rem;
+}
+.deposit-left p, .deposit-right-num{
+	font-size: 0.9rem;
+	line-height:22px;
+}
+.deposit-left p.deposit-time{
+	font-size: 1.2em;
+	color: #606060;
+}
+.deposit-right-num{
+	font-weight: 600;
+}
+.orange{
+	line-height:44px;
+}
+.green{
+	color:#81b33e;
+	line-height:66px;
+}		
+}
+
+/*屏幕大于320px小于359px*/
+@media screen and (min-width: 320px) and (max-width : 359px){
+/*消息类型*/
+.pop-box{
+	padding: 20px 0; 
+	top: 40px;
+}
+.pop-box ul li{
+	width: 29%; 
+	height: 28px; 
+	line-height: 28px; 
+	font-size: 1.4em; 
+}
+/*消息中心*/
+.index-main{
+	margin-top: 40px;
+}
+.header-nav ,.header-nav a{
+	height: 40px;
+	line-height: 40px;
+}
+.header-nav a{
+	width: 20px;
+}
+.header-nav a img{
+	height: 40px;
+}
+.header-nav p{
+	font-size: 1rem;
+}
+.news-box-time{
+	height: 25px;
+	line-height: 25px;
+	font-size: 1.2em;
+}
+.news-box ul li{
+	padding-bottom:15px;
+}
+.news-box ul li img.icon,.news-box-li-right h3{
+	margin-top: 15px;
+}
+.news-box ul li img.icon{
+	height: 20px;
+}
+.news-box-li-right h3,.news-box-li-right p{
+	font-size: 0.9rem;
+}
+
+/*积分明细*/
+.integral-main{
+	margin-top: 30px;
+}
+.integral-top{
+	height: 40px;
+}
+.deposit-top{
+	top:40px;
+	height: 40px;
+}
+.integral-nav{
+	height: 52px;
+	margin-top: 40px;
+}
+.integral-nav a img{
+	height: 52px;
+}
+.integral-top h4,.deposit-top h4{
+	line-height: 20px;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.integral-top h4 img,.deposit-top h4 img{
+	height: 20px;
+	width: 20px;
+}
+.integral-top-txt{
+	font-size: 0.55rem;
+	margin-top: 4px;
+}
+.integral-balance, .deposit-num{
+	font-size: 1.5rem;
+}
+.integral-balance img{
+	width: 30px;
+	height: 30px;
+	margin-top:2px;
+}
+.integral-title, .num{
+	font-size: 0.9rem;
+	line-height: 43px;
+}
+.num img{
+	width: 25px;
+	height: 25px;
+	margin-top: 9px;
+}
+/*押金明细*/
+.deposit-main{
+	margin-top: 105px;
+}
+.deposit-num{
+	line-height: 1.5rem;
+}
+.deposit-txt{
+	font-size: 0.7em;
+	line-height: 1.5rem;
+}
+.deposit-left p, .deposit-right-num{
+	font-size: 0.9rem;
+	line-height:22px;
+}
+.deposit-left p.deposit-time{
+	font-size: 1.2em;
+	color: #606060;
+}
+.deposit-right-num{
+	font-weight: 600;
+}
+.orange{
+	line-height:44px;
+}
+.green{
+	color:#81b33e;
+	line-height:66px;
+}	
+}
+
+/*屏幕大于360px小于479px*/
+@media screen and (min-width: 360px) and (max-width : 479px){
+/*消息类型*/
+.pop-box{
+	padding: 20px 0; 
+	top: 45px;
+}
+.pop-box ul li{
+	width: 29%; 
+	height: 38px; 
+	line-height: 38px; 
+	font-size: 1.5em; 
+}
+/*消息中心*/
+.index-main{
+	margin-top: 45px;
+}
+.header-nav ,.header-nav a{
+	height: 45px;
+	line-height: 45px;
+}
+.header-nav a{
+	width: 25px;
+}
+.header-nav a img{
+	height: 45px;
+}
+.header-nav p{
+	font-size: 1.2rem;
+}
+.news-box-time{
+	height: 28px;
+	line-height: 28px;
+	font-size: 1.2em;
+}
+.news-box ul li{
+	padding-bottom:15px;
+}
+.news-box ul li img.icon,.news-box-li-right h3{
+	margin-top: 15px;
+}
+.news-box ul li img.icon{
+	height: 25px;
+}
+.news-box-li-right h3,.news-box-li-right p{
+	font-size: 1rem;
+}
+
+/*积分明细*/
+.integral-main{
+	margin-top: 25px;
+}
+.integral-nav{
+	height: 58px;
+	margin-top: 45px;
+}
+.integral-nav a img{
+	height: 58px;
+}
+.integral-top{
+	height: 45px;
+}
+.deposit-top{
+	top:45px;
+	height: 45px;
+}
+.integral-top h4,.deposit-top h4{
+	line-height: 20px;
+	font-size: 1rem;
+	font-weight: normal;
+}
+.integral-top h4 img,.deposit-top h4 img{
+	height: 20px;
+	width: 20px;
+}
+.integral-top-txt{
+	font-size: 0.6rem;
+	margin-top: 4px;
+}
+.integral-balance, .deposit-num{
+	font-size: 1.5rem;
+}
+.integral-balance img{
+	width: 30px;
+	height: 30px;
+	margin-top:2px;
+}
+.integral-title, .num{
+	font-size: 1rem;
+	line-height: 43px;
+}
+.num img{
+	width: 25px;
+	height: 25px;
+	margin-top: 9px;
+}
+
+/*押金明细*/
+.deposit-main{
+	margin-top: 110px;
+}
+.deposit-num{
+	line-height: 1.5rem;
+}
+.deposit-txt{
+	font-size: 0.7em;
+	line-height: 1.5rem;
+}
+.deposit-left p, .deposit-right-num{
+	font-size: 0.9rem;
+	line-height:27px;
+}
+.deposit-left p.deposit-time{
+	font-size: 1.2em;
+	color: #606060;
+}
+.deposit-right-num{
+	font-weight: 600;
+}
+.orange{
+	line-height:55px;
+}
+.green{
+	color:#81b33e;
+	line-height:80px;
+}
+}
+
+/*屏幕大于480px小于640px*/
+@media screen and (min-width: 480px) and (max-width: 639px) {
+/*消息类型*/
+.pop-box{
+	padding: 20px 0; 
+	top: 65px;
+}
+.pop-box ul li{
+	width: 29%; 
+	height: 48px; 
+	line-height: 48px; 
+	font-size: 1.8em; 
+}
+/*消息中心*/
+.index-main{
+	margin-top: 65px;
+}
+.header-nav ,.header-nav a{
+	height: 65px;
+	line-height: 65px;
+}
+.header-nav a{
+	width: 30px;
+}
+.header-nav a img{
+	height: 65px;
+}
+.header-nav p{
+	font-size: 1.5rem;
+}
+.news-box-time{
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.5em;
+}
+.news-box ul li img.icon,.news-box-li-right h3{
+	margin-top: 15px;
+}
+.news-box ul li img.icon{
+	height: 35px;
+}
+.news-box-li-right h3,.news-box-li-right p{
+	font-size: 1rem;
+}
+.news-box ul li{
+	padding-bottom: 15px;
+	border-bottom: 2px solid #ededed;
+	background-color: #fff;
+}
+
+/*积分明细*/
+.integral-main{
+	margin-top: 35px;
+}
+.integral-nav{
+	height: 80px;
+	margin-top: 65px;
+}
+.integral-nav a img{
+	height: 80px;
+}
+.integral-top{
+	height: 70px;
+}
+.deposit-top{
+	top:65px;
+	height: 70px;
+}
+.integral-top h4, .deposit-top h4{
+	line-height: 25px;
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+.integral-top h4 img,.deposit-top h4 img{
+	height: 25px;
+	width: 25px;
+}
+.integral-top-txt{
+	font-size: 0.9rem;
+	margin-top: 0px;
+}
+.integral-balance,.deposit-num{
+	font-size: 2rem;
+}
+.integral-balance img{
+	width: 34px;
+	height: 34px;
+	margin-top: 5px;
+}
+.integral-title, .num{
+	font-size: 1rem;
+	line-height: 55px;
+}
+.num img{
+	width: 28px;
+	height: 28px;
+	margin-top: 15px;
+}
+
+/*押金明细*/
+.deposit-main{
+	margin-top: 160px;
+}
+.deposit-num{
+	line-height: 2rem;
+}
+.deposit-txt{
+	font-size: 0.7em;
+	line-height: 2rem;
+}
+.deposit-left p, .deposit-right-num{
+	font-size: 1rem;
+	line-height:27px;
+}
+.deposit-left p.deposit-time{
+	font-size: 1.5em;
+}
+.deposit-time{
+	color: #606060;
+}
+.deposit-right-num{
+	font-weight: 600;
+}
+.orange{
+	line-height:55px;
+}
+.green{
+	color:#81b33e;
+	line-height:80px;
+}
+}

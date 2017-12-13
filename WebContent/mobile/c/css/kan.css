@@ -1,0 +1,309 @@
+.titletop {
+    border-top: 1px solid #C9CACA;    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+     max-height: 3em;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 90%;
+}
+
+
+ .price_wrap {
+    height: 20px;
+    line-height: 20px;
+     overflow: hidden;
+    padding: 0 10px;
+}
+
+ .old_price_wrap {
+     margin: 0 10px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+    white-space: nowrap;
+   
+}
+
+ .detail_item {
+    overflow: hidden;
+    padding: 10px;
+   // position: absolute;
+   // top: 0;
+    width: 100%;
+}
+
+ .detail_item img {
+    display: block;
+    height: auto !important;
+    max-width: 100%;
+    width: auto !important;
+}
+
+
+.memo-title,.standard-bar {
+    background-color: #37ADB1;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    padding: 3px 6px;
+}
+
+
+
+
+
+.fixed{position:fixed;top:20;left:10;}
+
+
+ .ju_filter_inner:after {
+    clear: both;
+    content: " ";
+    display: block;
+}
+.ju_filter_inner {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    height: 41px;
+}
+.normal_space {white-space: normal;}
+
+.font13 {font-size: 13px;}
+
+
+
+
+
+.pop-reply-btn {
+    background-color: #3388CC;
+    border-color: #3388CC;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #005599;
+}
+
+
+
+
+
+.ui-li-thumb{position:absolute;left:0;top:0;max-height:4em;max-width:4em;}
+
+
+
+
+
+
+
+
+
+.comment-popup a:active{background-position-y:-53.5px;}
+	
+.comment-popup {
+    display: none;
+    left: 48%;
+    position: absolute;
+    text-align: center;
+    width: 156px;
+    z-index: 100;
+}
+.comment-popup a, .comment-popup a:visited {
+    background: url("../images/comment-popup.png") repeat scroll 0 0 / auto 105px rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    float: left;
+//    font-size: 13px;
+    height: 51.5px;
+    line-height: 38.5px;
+}
+.comment-popup .left {
+    width: 78.5px;
+}
+.comment-popup .right {
+    background-position: -78.5px 0;
+    width: 77.5px;
+}	
+
+
+.kk_tip{
+         display:none;
+         padding:5px;
+         margin:5px;
+         position: absolute; 
+         background: #555;
+         color:#fff;
+         border: 3px solid #555;
+         z-index: 999999; 
+}
+
+#cssmenu{
+	z-index: 9999; 
+	width:100%;
+	min-width:280px;
+	text-align:center;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+#cssmenu .menubar1{	
+	width:33%;
+}
+#cssmenu ul, #cssmenu li, #cssmenu span, #cssmenu a {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#cssmenu:after, #cssmenu ul:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#cssmenu a {
+    color: #333333;
+    display: inline-block;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 12px;
+    min-width:100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #eeeeee;
+}
+#cssmenu ul {
+    list-style: outside none none;
+    z-index: 9999; 
+}
+#cssmenu > ul > li {
+    float: left;
+    z-index: 9999; 
+}
+#cssmenu > ul > li.active > a {
+    background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px #979797 inset, 0 10px 10px #979797 inset;
+    filter: none;
+}
+#cssmenu > ul > li.active a:hover {
+    background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    filter: none;
+}
+#cssmenu > ul > li a {
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 50%, #d7d7d7 51%, #ededed 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    box-shadow: 0 0 0 1px #ffffff inset;
+    filter: none;
+    line-height: 34px;
+    padding: 0 1px;
+}
+#cssmenu > ul > li a:hover {
+    background: linear-gradient(to bottom, #d9d9d9 0%, #bfbfbf 50%, #b0b0b0 51%, #c7c7c7 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    filter: none;
+}
+#cssmenu > ul > li:first-child a {
+    border-left: 1px solid #d2d2d2;
+    border-radius: 3px 0 0 3px;
+}
+#cssmenu > ul > li:last-child a {
+    border-radius: 0 3px 3px 0;
+}
+#cssmenu .has-sub:hover ul {
+    display: block;
+}
+#cssmenu .has-sub level2Div {
+    display: none;
+    left: 0px;
+    min-width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 36px;
+    height:150px;
+    min-height:200px;
+}
+#cssmenu .has-sub ul { 
+	display: none;   
+    left: 0px;
+    min-width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 36px;
+    height:65%;
+    min-height:200px;
+    overflow:auto;
+}
+#cssmenu .has-sub ul li {
+    text-align: center;
+    background:#ffd119 url(/mobile/c/img/blank.gif) repeat 100% 100%;
+}
+#cssmenu .has-sub ul li a {
+    border-left: 1px solid #d2d2d2;
+    border-top: 0 none;
+    display: block;
+    font-size: 12px;
+    line-height: 120%;
+    padding: 9px 5px;
+    text-align: center;
+}
+
+/*add by kanlei */
+#cssmenu .has-sub:hover level2Div {
+    display: block;
+}
+#cssmenu .has-sub:hover .level3 {
+    display: none;
+}
+#cssmenu .has-sub2:hover .level3 {
+    display: block;
+}
+#cssmenu .has-sub2 ul {
+    display: none;   
+    min-width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 100%;
+	top:1px;
+	z-index: 9999; 
+}
+
+.level3_ul {
+    display: block;   
+    min-width: 80px;
+    position: absolute;
+    text-align: center;
+    left: 300px;
+	top:1px;
+	z-index: 9999; 
+	overflow:auto;
+}
+.level3_ul li {
+    text-align: center;
+    z-index: 9999; 
+    background:#ffd119 url(/mobile/c/img/blank.gif) repeat 100% 100%;
+}
+.level3_ul li a {
+    border-left: 1px solid #d2d2d2;
+    border-top: 0 none;
+    display: block;
+    font-size: 12px;
+    line-height: 120%;
+    padding: 9px 5px;
+    text-align: center;
+}
+
+
+
+
+#cssmenu .has-sub2 ul li {
+    text-align: center;
+    z-index: 9999; 
+    background:#ffd119 url(/mobile/c/img/blank.gif) repeat 100% 100%;
+}
+#cssmenu .has-sub2 ul li a {
+    border-left: 1px solid #d2d2d2;
+    border-top: 0 none;
+    display: block;
+    font-size: 12px;
+    line-height: 120%;
+    padding: 9px 5px;
+    text-align: center;
+}

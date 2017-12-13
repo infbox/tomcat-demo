@@ -1,0 +1,181 @@
+
+body {background:#fff;font-size:12px;font-family:Tahoma, Geneva, sans-serif;line-height:150%;margin:0;padding:0;color:#404040;}
+div {margin:0 auto;padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p {margin:0;padding:0;border:none;list-style-type:none;}
+
+IMG {border-bottom:0;border-left:0;border-top:0;border-right:0;margin:0;border-bottom-style:none;border-right-style:none;border-top-style:none;border-left-style:none;}
+
+
+
+
+
+EM {font-style:normal;font-weight:normal;}
+A {color:#333;text-decoration:none;}
+A:hover {text-decoration:underline;}
+.block {width:900px;height:auto;}
+.block900 {width:900px;height:auto;}
+.block960 {width:960px;height:auto;}
+del {color:#555;}
+.f_l {float:left;}
+.f_r {float:right;}
+.tl {text-align:left;}
+.tc {text-align:center;}
+.tr {text-align:right;}
+.dis {display:block;}
+.inline {display:inline;}
+.none {display:none;}
+.dashed {background:url(lineBg.gif) repeat-x left top;color:#3f3f3f;padding:2px 0 3px 12px;}
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+*html .clearfix {height:1%;}*+html .clearfix {height:1%;}.word {word-break:break-all;}
+.B_input {border:1px solid #0f97ed;}.inputBg {border:1px solid #666;height:18px;line-height:18px;color:#a2a2a2;}
+.f1 {color:#ee125a;font-weight:700;}.f2 {color:#006bd0;font-weight:700;margin-right:15px;}
+.f3 {color:#9e9e9e;}
+.f4 {color:#ed145b;}.f4_b {color:#dc2868;font-weight:700;}.f5 {font-size:14px;font-weight:700;}
+
+
+.bnt_blue {background:url(bg.gif) 
+no-repeat 0 0;width:54px;height:24px;text-align:center;line-height:24px;color:#fff;border:none;cursor:pointer;}
+.bnt_blue_1 {
+	background:url(http://www.luck1.net/btn1.jpg) no-repeat 0 -663px;
+	width:215px;
+	height:80px;
+	text-align:center;
+	line-height:80px;
+	color:#fff;
+	border:none;
+	cursor:pointer;}
+	
+.btn_01 {
+font-size:15px;
+padding: 0 5px;
+color: #D3E0E7;
+background-image: url("http://www.luck1.net/imgs/btn01.gif");
+background-repeat: repeat-x;
+background-position: 0 50%;
+outline: 1px solid #D3E0E7;
+border: 1px solid #FFF !important;
+height: 32px !important;
+border: 1px solid #D3E0E7;
+height:32px;
+line-height:32px;
+cursor:pointer;
+font-weight:bold;
+}	
+.bnt_blue_2 {background:url(bg.gif) no-repeat 0 -696px;width:141px;height:24px;text-align:center;line-height:24px;color:#fff;border:none;cursor:pointer;}
+.bnt_bonus {background:url(bg.gif) no-repeat -56px 0;width:54px;height:24px;text-align:center;line-height:24px;color:#fff;border:none;cursor:pointer;}
+.box_1 {border:1px solid #bbb;background-color:#fff;}.box_2 {border:1px solid #bbb;background:url(box_2Bg.gif) repeat-x top left;background-color:#edf8fe;overflow:hidden;}
+.boxCenterList {padding:7px 7px 6px;}
+.blank {height:8px;line-height:8px;clear:both;visibility:hidden;}
+.blank5 {height:2px;line-height:2px;clear:both;visibility:hidden;}
+.logo {padding-top:14px;}
+
+.top_nav {height:29px;line-height:29px;background:#ececec;}.top_nav .f_l .inputBg {width:118px;height:19px;line-height:19px;background:url(email_bg.gif) repeat-x;padding-left:4px;border:1px solid #aeaeae;color:#aeaeae;}
+.top_nav .f_r {color:#000;}.top_nav .f_r a {padding-left:5px;padding-right:3px;color:#000;}.top_nav .f_l a {padding-left:5px;padding-right:3px;}
+.top_nav .ul1 {position:relative;z-index:999999999;top:0;width:75px;padding-left:8px;background:url(biao8.gif) 64px 12px no-repeat;float:left;}
+.top_nav .ul1_float {display:none;}
+.top_nav .ul1_on {background:none;}
+.top_nav .ul1_on .ul1_float {display:block;position:absolute;
+padding-left:7px;top:4px;left:0;width:73px;border:1px solid #ececec;background:#ececec url(biao8b.gif) 63px 8px no-repeat;}
+.top_nav .ul1_on .ul1_float a {line-height:22px;display:block;}
+.NaviBar {line-height:38px;height:38px;background:#901D78;}
+.NaviBar li {float:left;line-height:38px;height:38px;}
+.NaviBar li a {color:#fff;display:block;text-decoration:none;font-family:Î¢ÈíÑÅºÚ;font-size:14px;width:108px;text-align:center;
+font-weight:700;}
+.NaviBar li a b {background:url(biao4.gif) 0 center no-repeat;padding-left:15px;}
+.NaviBar li a:hover,.mid_nav .nav_list li a.curr,.NaviBar .nav_on a {color:#FFF;display:block;background:#ed145b;text-decoration:none;text-align:center;}
+.NaviBar li a:hover b,.mid_nav .nav_list li a.curr b,.NaviBar .nav_on a b {background:url(biao4b.gif) 0 center no-repeat;padding-left:15px;}
+.NaviBar li a.curr {color:#FFF;display:block;background:#ed145b;text-decoration:none;}.NaviBar li.nav_on #a1 {color:#FFF;display:block;text-decoration:none;}
+.NaviBar .nav_list li div.sub_nav {width:108px;position:absolute;z-index:5003;display:none;margin:0;left:0;top:38px;background:#ed145b;}
+.NaviBar .nav_list li.nav_on div.sub_nav {display:block;}
+.NaviBar .nav_list li div.sub_nav a {color:#fff;height:38px;font-weight:400;line-height:38px;display:block;text-align:center;}
+.NaviBar .nav_list li div.sub_nav a:hover {background:#fc7ca6;}.NaviBar_b {height:35px;line-height:35px;background:#eee;border-top:1px solid #fff;overflow:hidden;}
+.NaviBar_b .f_l a {padding:0 20px 0 0;}.NaviBar_b .f_l a:hover {text-decoration:none;color:#ed145b;}.search_box {float:right;}
+.search_bnt {width:38px;height:26px;background:url(imgs/search.png) no-repeat;float:left;border:none;}
+
+
+
+.standard-bar {
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size:15px;
+    padding: 3px 6px;
+    background-color:#37adb1;
+    height:28px; 
+    line-height:28px;
+}
+
+.memo-title {
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size:15px;
+    padding: 3px 6px;
+    background-color:#37adb1;
+    height:28px; 
+    line-height:28px;
+}
+
+.personThum{
+float:left;
+margin-left:3px;
+}
+
+#prov_city div{
+	width: 100px;
+	float: left;
+	position: relative;
+}
+
+.f_btn .r_btn, .f_btn_blue .r_btn {
+    background: url("../images/icon_20100929.png?v=20130311") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 29px;
+    line-height: 29px;
+    overflow: visible;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.w_85 {
+    width: 85px;
+}
+
+.boldTitle {
+	color: #333333;
+	font-weight: bold;
+	
+}
+
+.footer_bg {background:#eee;border-top:1px solid #ccc;}
+.bNavList {height:27px;line-height:27px;padding:0 12px;}
+.links {padding:3px 12px;}
+.bNavList a,.links a {color:gray;text-decoration:none;}
+.bNavList img {_position:relative;top:8px;}
+.links img {width:88px;height:30px;margin:5px;}
+
+#bottomNav2 {text-align:center;}
+#bottomNav2 .bNavList {padding-top:10px;color:gray;}
+#bottomNav2 .bNavList a {color:gray;padding:0 8px;}
+#bottomNav2 .bNavList a:hover {color:#ed145b;}
+
+#footer {width:760px;text-align:center;margin:0 auto;color:gray;line-height:22px;}
+#footer .text {text-align:center;color:gray;}
+#footer .text a {color:gray;text-decoration:none;}
+#footer .text a:hover {color:#ed145b;text-decoration:none;}
+
+#pztext {
+	float: left;
+	width: 700px;
+	position: relative;
+	 margin-top: 15px;
+	 padding-top:5px;
+	 font-size:14px;
+	 line-height:150%;
+}
+
+.luckBg{border-top:1px solid #c4d6ec;border-bottom:1px solid #c4d6ec;padding:0 1px;background:url(http://www.luck1.net/imgs/main_bg3.png) repeat-y}

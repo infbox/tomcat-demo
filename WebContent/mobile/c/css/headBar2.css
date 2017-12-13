@@ -1,0 +1,13 @@
+.go_back{width:auto;height:80px;margin-top:-9px;}
+@media screen and (max-width:320px){
+	.go_back{width:auto;height:40px;margin-top:-9px;}
+	}
+@media screen and (min-width: 320px) and (max-width : 359px){
+.go_back{width:auto;height:40px;margin-top:-9px;}
+	}
+	@media screen and (min-width: 360px) and (max-width : 479px){
+	.go_back{width:auto;height:45px;margin-top:-9px;}
+	}
+	@media screen and (min-width: 480px) and (max-width: 639px) {
+	.go_back{width:auto;height:60px;margin-top:-10px;}
+}

@@ -1,0 +1,39 @@
+.bodyer {
+    position: relative;//关键
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #888888;
+    transition: top 1s;
+    -moz-transition: top 1s;
+    -webkit-transition: top 1s;
+    -o-transition: top 1s;
+}
+
+.block {
+    height: 80vh;
+    background-color: #005000;
+}
+
+.auto1 {
+    width: 75%;
+    height: 10rem;
+    line-height: 10rem;
+    margin: 0 auto;
+    background-color: #0B2E45
+}
+
+.auto2 {
+    width: 75%;
+    height: 10rem;
+    line-height: 10rem;
+    margin: 0 auto;
+    background-color: #1d1d39
+}
+
+.auto-keyboard {
+    width: 100%;
+    outline: none;
+    font-size: 1.5rem;
+    height: 2rem;
+    border: none;
+}

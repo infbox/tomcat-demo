@@ -1,0 +1,71 @@
+.prize-name{
+  float: left;
+  height:44px;
+  line-height:44px;
+  width: 100%;
+  padding-left:10px;
+  text-align:left;
+  padding-right:10px;
+}
+.prize-name img{
+	float: left;
+	width: 16px;
+	margin-top: 14px;
+}
+.prize-name p{
+	float: left;
+	margin-left:10px;
+	line-height:44px;
+	font-size: 18px;
+	color: #5087da;
+}
+.prize-name button{
+	float: right;
+	margin-top: 10px;
+}
+
+.table-view-cell {padding:0;margin-bottom:1px;}
+.table-view-cell ul{padding:0;padding-left:20px;margin-bottom:1px;}
+
+.table-view-cell ul li{font-size:13px;}
+
+.prize-detail{
+  float: left;
+  height:148px;
+  width: 100%;
+  padding-left:10px;
+  text-align: left;
+}
+.prize-detail img{
+	float: left;
+	width:40%;
+	margin-top:6px;
+}
+
+.prize-detail ul{
+	float: left;
+	margin-top:4px;
+	width:60%;
+}
+.prize-detail ul li{
+	list-style: none;;
+	text-align: left;
+     color: #a7a7a7;
+     font-family: "黑体";
+}
+ .prize-state{
+ 	width: 100%;
+ 	float: left;;
+ 	font-size: 18px;
+ 	margin-top:5px;
+}
+
+.loading {
+	margin: 12px auto;
+	border: 8px solid #AAA;
+	height: 16px;
+	width: 16px;
+	background: #CCC;
+	border-radius: 16px;
+	-webkit-animation: pulse 2s ease-in-out 0s infinite;
+}

@@ -1,0 +1,101 @@
+/* basic */
+body{ background-color:#fff; margin:0 auto; text-align:center; }
+h1,h2,h3,h4,h5,h6,ul,p,dl,dt,dd,form,i{ margin:0px; padding:0px; font-weight:normal; }
+ul{ list-style:none; overflow:hidden; }
+a{ color:#00a0e9; text-decoration:none; text-decoration:none; }
+
+.clear{ *zoom:1; }
+.clear:after{ clear:both; content:""; display:table; }
+img{max-width: 100%;border:none;display:block;}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 7px;
+    display: inline-block;
+    position: relative;
+    background: #cbcbcb;  /*Firefox*/
+   	margin-right:5px;
+   	vertical-align: middle;
+}
+
+.top_bg img{width:100%}
+.user{position:absolute;top:10%;left:5%;text-align:left;width:70%}
+.user_head img{
+  float:left; 
+  border-radius:78px 78px 78px 78px;
+  border:3px;border-color:rgba(255,255,255,0.6);
+  border-style: solid;width:20%;
+  margin:5% auto;
+}
+.user_name{
+  float:left; 
+  margin:10% 3%;
+}
+.user_name p{line-height:30px; color: red;font-size:16px;text-align:left;}
+.cell-name {    
+  height: 25px;
+  line-height:25px;    
+  text-align: left;
+  font-style:normal；
+}
+.cell-image{
+	width:25px;
+	max-width: 25px;
+}
+
+.input_phone{
+  padding-top: 15px;
+  height: 100px;
+}
+.input_phone p{
+  text-align: left;
+  margin:auto 2%;
+  font-size: 18px;
+}
+.input_phone input{
+  float: left;
+  width: 46%;
+  margin:2% 2%;
+  height: 48px;
+}
+.input_phone button{
+  float: left;
+  width: 46%;
+  margin: 2% 2%;
+  height: 48px;
+}
+.input_code{
+  padding-top: 15px;
+}
+.input_code p{
+  text-align: left;
+   margin:auto 2%;
+   font-size: 18px;
+}
+.input_code input{
+  width: 96%;
+  margin:2% 2%;
+  height: 48px;
+}
+.input_code button{
+  width: 96%;
+  margin: 2% 2%;
+  height: 48px;
+}
+
+.w45{
+ width: 45px;
+}
+.w25{
+ width: 25px;
+}
+.bg_c_133{
+	 background-color:RGB(255,133,0);
+	 color: white;
+}
+.bd_b_1{
+	 border-bottom:1px;	 
+	 border-color:gray;
+}
+

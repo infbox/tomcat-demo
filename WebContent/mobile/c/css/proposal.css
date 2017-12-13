@@ -1,0 +1,109 @@
+/*通用style*/
+*{margin: 0;padding: 0;}
+body{font: normal 62.5% "微软雅黑"; background: #fafafa;}
+ul{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+img {max-width: 100%;height:auto;width: auto\9; /* ie8 */border:0px;}
+
+/*顶部返回条style*/
+.prev{width: 100%; height: 80px; line-height: 80px; font-size: 2.9em; color: #fff; background: #ff8400; position: fixed; top: 0; z-index: 999;}
+.prev a{display: block; float: left; color: #fff; height: 60px; line-height: 60px; font-size: 1.75em;  margin: 10px 2%; }
+
+/*主体内容*/
+.main{width: 100%; margin-top: 80px; position: relative;}
+.main ul li, .btn-submit{font-size: 2.6em;}
+input[type="text"]{color: #000; font-size: 1em; height:25px; border: 0;}
+input[type="button"]{font-size: 1em; height:35px; line-height: 35px; background: #FFFFFF; cursor: pointer; border: 0; width: 30%;}
+textarea{width: 90%; margin: 5px 5%; height: 300px; border-radius: 5px; maxlength:500; border: 2px solid #ccc; resize: none; border-bottom: 2px solid #ccc;}
+.main ul li{width: 100%; height: 90px; line-height: 90px; background: #fff;  color: #949494; padding-left: 5%; position: relative;}
+.main ul li p{float: left;}
+#proize{color: #000;}
+.main ul li.active{padding-left: 0; height: 310px; position: relative;}
+.main ul li.active span{position: absolute; height: 30px; line-height: 30px; bottom: 10px; right: 5%; font-size: 0.76em;}
+input[type="button"]{margin-top: 20px; cursor: pointer; font-size: 2.6em;}
+input[type="button"]{height: 85px; width: 85%; background: #ff8400; border: 0; border-radius: 5px; color: #fff;}
+.foot{text-align: center;}
+.pro-box{width: 64%; height: 690px;  background: #f5f5f5; position: absolute; top: 50px; left: 18%; z-index: 1001;}
+.pro-box ul{margin: 0; padding: 0;}
+.pro-box ul li{font-size: 2.6em; color: #7c7c7c; height: 75px; line-height: 75px; background: #f5f5f5; border-bottom: 2px solid #dadada; width: 80%; margin: 0 auto;}
+.pro-box ul li.orange{border-left: 10px solid #ff8400;}
+.pro-close{ display: block; width: 40px; height: 40px; line-height: 40px; font-size: 3em; text-align: center; color: #fff; border: 5px solid #fff; background: #ff8400; border-radius: 27px; position: absolute; top: -22px; right: -22px;}
+/*弹出层*/
+#pageOverlay { position:fixed; top:0; left:0; z-index:1000; width:100%; height:100%; background:#000; filter:alpha(opacity=70); opacity:0.7; display: none; }
+
+/*屏幕小于320px*/
+@media screen and (max-width : 319px){
+body{padding:0;margin:0; width: 320px;}
+.main{margin-top: 40px;}
+.main ul li,.btn-submit{font-size: 1.3em;}
+.main ul li{height: 40px; line-height: 40px;}
+.main ul li p{float: left;}
+.main ul li a{ width: 25px; height: 25px; line-height: 25px; border-radius:13px; top: 10px;}
+.prev{height: 40px; line-height: 40px; font-size: 1.4em; width: 320px;}
+.prev a{height: 18px; line-height: 18px; font-size:1.5em;}
+textarea{height: 155px;}
+.main ul li.active{height: 165px;}
+input[type="button"]{margin-top: 20px;}
+input[type="button"]{height: 45px; width: 85%; background: #ff8400; border: 0; border-radius: 5px; color: #fff;}
+.pro-box{height: 340px; top: 25px;}
+.pro-box ul li{font-size: 1.3em; height: 35px; line-height: 35px; }
+.pro-box ul li.orange{border-left: 4px solid #ff8400;}
+.pro-close{ width: 25px; height: 25px; line-height: 25px; font-size: 2em; border: 3px solid #fff; background: #ff8400; border-radius: 25px; top: -12px; right: -12px;}
+.main ul li.active span{line-height: 60px;}
+}
+
+/*屏幕大于320px小于359px*/
+@media screen and (min-width: 320px) and (max-width : 359px){
+body{padding:0;margin:0;}
+.main{margin-top: 40px;}
+.main ul li,.btn-submit{font-size: 1.3em;}
+.main ul li{height: 40px; line-height: 40px;}
+.main ul li p{float: left;}
+.main ul li a{ width: 25px; height: 25px; line-height: 25px; border-radius:13px; top: 10px;}
+.prev{height: 40px; line-height: 40px; font-size: 1.4em; width: 320px;}
+.prev a{height: 18px; line-height: 18px; font-size:1.5em;}
+textarea{height: 155px;}
+.main ul li.active{height: 165px;}
+input[type="button"]{margin-top: 20px;}
+input[type="button"]{height: 45px; width: 85%; background: #ff8400; border: 0; border-radius: 5px; color: #fff;}
+.pro-box{height: 340px; top: 25px;}
+.pro-box ul li{font-size: 1.3em; height: 35px; line-height: 35px; }
+.pro-box ul li.orange{border-left: 4px solid #ff8400;}
+.pro-close{ width: 25px; height: 25px; line-height: 25px; font-size: 2em; border: 3px solid #fff; background: #ff8400; border-radius: 25px; top: -12px; right: -12px;}
+.main ul li.active span{line-height: 60px;}
+}
+/*屏幕大于360px小于479px*/
+@media screen and (min-width: 360px) and (max-width : 479px){
+body{padding:0;margin:0;}
+.main{margin-top: 45px;}
+.main ul li, .btn-submit{font-size: 1.4em;}
+.main ul li{height: 45px; line-height: 45px;}
+.main ul li a{ display: block; width: 25px; height: 25px; line-height: 25px; border-radius:13px; top: 10px;}
+.prev{height: 45px; line-height: 45px; font-size: 1.6em;}
+.prev a{height: 25px; line-height: 25px; font-size:1.5em;}
+textarea{height: 170px;}
+.main ul li.active{height: 180px;}
+input[type="button"]{margin-top: 20px;}
+input[type="button"]{height: 45px; width: 85%; background: #ff8400; border: 0; border-radius: 5px; color: #fff;}
+.pro-box{height: 390px; top: 25px;}
+.pro-box ul li{font-size: 1.4em; height: 40px; line-height: 40px; }
+.pro-box ul li.orange{border-left: 6px solid #ff8400;}
+.pro-close{ width: 30px; height: 30px; line-height: 30px; font-size: 2.5em; border: 3px solid #fff; background: #ff8400; border-radius: 30px; top: -15px; right: -15px;}
+.main ul li.active span{line-height: 50px;}
+}
+/*屏幕大于480px小于640px*/
+@media screen and (min-width: 480px) and (max-width: 639px) {
+body{padding:0;margin:0;}
+.main{margin-top: 60px;}
+.main ul li, .btn-submit{font-size: 1.9em;}
+.main ul li{height: 65px; line-height: 65px;}
+.main ul li a{ width: 30px; height: 30px; line-height: 30px; border-radius:15px; top: 20px;}
+.prev{height: 60px; line-height: 60px; font-size: 2.2em;}
+.prev a{height: 40px; line-height: 40px; font-size:1.5em;}
+input[type="button"]{margin-top: 20px;}
+input[type="button"]{height: 60px; width: 85%; background: #ff8400; border: 0; border-radius: 5px; color: #fff;}
+.pro-box{height: 515px; top: 30px;}
+.pro-box ul li{font-size: 1.9em; height: 55px; line-height: 55px; }
+.pro-box ul li.orange{border-left: 6px solid #ff8400;}
+.main ul li.active span{line-height: 40px;}
+}

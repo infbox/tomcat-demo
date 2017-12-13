@@ -1,0 +1,121 @@
+/*通用style*/
+*{margin: 0;padding: 0;}
+body{font: normal 62.5% "微软雅黑"; background: #ededed;}
+ul{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+img {max-width: 100%;height:auto;width: auto\9; /* ie8 */border:0px;}
+
+/*顶部返回条style*/
+.prev{width: 100%; height: 80px; line-height: 80px; font-size: 2.9em; color: #fff; background: #ededed;; position: fixed; top: 0; z-index: 999;}
+.prev a{display: block; float: left; color: #949494; height: 60px; line-height: 60px; font-size: 1.75em;  margin: 10px 2%; }
+
+/*主体内容*/
+.main{width: 100%; position: relative; top: 80px;}
+.main h3{text-align: center; font-size: 2.3em; margin-top: 10%; color: #606060; font-weight: normal;}
+.main-top{margin-top: -1px;}
+.main-top p{font-size: 2.6em; color: #949494; text-align: center;}
+.main-top img{width: 100%; height: 170px;}
+.main-foot{width: 90%; margin: 0 auto; background: #ffffff; border-radius: 10px;padding-bottom: 30px; box-shadow: 0 10px #e1e1e1; position: relative; padding:100px 0; margin-top: 30px;}
+.main-foot p{clear: both;font-size: 2.0em; color: #949494; line-height: 35px; word-wrap: break-word; word-break: break-all;}
+.main-foot img{position: absolute; top:-12px; width: 263px; height: 57px; left:50%; margin-left:-132px!important;/*FF IE7 该值为本身宽的一半 */ }
+.main-foot ul{min-height: 10px; overflow: hidden;padding: 0 5%;}
+.main-foot span{display: block; font-size: 3.8em; color: #ff8400; text-align: center;}
+.main-foot ul li{border-right: 2px dashed #ccc; min-height: 30px;  float: left; width: 47%;}
+.main-foot ul li h3{font-size:2.6em; color: #ff8400; font-weight: normal; margin: 15px 0;}
+.main-foot ul li p{font-size: 2.0em; line-height: 35px; color: #949494; word-wrap: break-word; word-break: break-all;}
+.main-foot .phone-box li{width: 100%; border: 0;}
+.main-foot .phone-box li p{font-size: 2.0em; color: #949494; word-wrap: break-word; word-break: break-all; text-align: center;}
+
+/*小于320*/
+@media screen and (max-width:319px){
+body{padding:0;margin:0; width: 320px;}
+.prev{height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 18px; line-height: 18px; font-size:1.5em;}
+.main{top: 40px;}
+.main-top ul li{width: 12%; height: 40px; line-height: 40px; font-size: 1.5em; margin: 20px 9% 10px; border: 3px solid #d1cfcf; border-radius: 40px;}
+.main-top-title{font-size: 1.1em;}
+.main-foot{padding: 40px 0 20px; margin: 40px auto; margin-top:30px;}
+.main-foot ul li{border-right: 1px dashed #ccc; min-height: 30px; padding-left: 5%; padding-right: 2%; width: 40%;}
+.main-foot ul li h3{font-size:1em; color: #ff8400; font-weight: normal; margin: 15px 0;}
+.main-foot ul li p{font-size: 1em; color: #949494; word-wrap: break-word; word-break: break-all;}
+.main-foot p{font-size: 1.1em; padding-left: 8%;}
+.main-foot span{display: block; font-size: 1.9em; color: #ff8400; text-align: center;}
+.main-foot ul li h3{font-size:1em;}
+.main-foot ul li p{font-size: 1em; padding-left: 0;}
+.main-foot .phone-box li{width: 100%; border: 0; padding: 0;}
+.main-foot .phone-box li p{font-size: 1em; color: #949494; word-wrap: break-word; word-break: break-all; text-align: center;}
+.main h3{font-size: 1.1em; margin-top: 0px;}
+.main-top img{width: 100%; height: 71px;}
+.main-foot ul li p{line-height: 25px;}
+.main-top p{font-size: 1.2em;}
+.main-foot img{top:-6px; width: 153px; height: 32px; left:50%; margin-left:-77px!important;/*FF IE7 该值为本身宽的一半 */ }
+}
+
+/*屏幕大于320px小于359px*/
+@media screen and (min-width: 320px) and (max-width : 359px){
+body{padding:0;margin:0;}
+.prev{height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 18px; line-height: 18px; font-size:1.5em;}
+.main{top: 40px;}
+.main-top ul li{width: 12%; height: 40px; line-height: 40px; font-size: 1.5em; margin: 20px 9% 10px; border: 3px solid #d1cfcf; border-radius: 40px;}
+.main-top-title{font-size: 1.1em;}
+.main-foot{padding: 40px 0 20px; margin: 40px auto;margin-top:30px;}
+.main-foot ul li{border-right: 1px dashed #ccc; min-height: 30px; padding-left: 5%; padding-right: 2%; width: 40%;}
+.main-foot ul li h3{font-size:1em; color: #ff8400; font-weight: normal; margin: 15px 0;}
+.main-foot ul li p{font-size: 1em; color: #949494; word-wrap: break-word; word-break: break-all;}
+.main-foot p{font-size: 1.1em; padding-left: 8%;}
+.main-foot span{display: block; font-size: 1.9em; color: #ff8400; text-align: center;}
+.main-foot ul li h3{font-size:1em;}
+.main-foot ul li p{font-size: 1em; padding-left: 0;}
+.main-foot .phone-box li{width: 100%; border: 0; padding: 0;}
+.main-foot .phone-box li p{font-size: 1em; color: #949494; word-wrap: break-word; word-break: break-all; text-align: center;}
+.main h3{font-size: 1.1em;margin-top: 0px;}
+.main-top img{width: 100%; height: 71px;}
+.main-foot ul li p{line-height: 25px;}
+.main-top p{font-size: 1.2em;}
+.main-foot img{top:-6px; width: 153px; height: 32px; left:50%; margin-left:-77px!important;/*FF IE7 该值为本身宽的一半 */ }
+}
+
+/*屏幕大于360px小于479px*/
+@media screen and (min-width: 360px) and (max-width : 479px){
+.prev{height: 45px; line-height: 45px; font-size: 1.6em;}
+.prev a{height: 25px; line-height: 25px; font-size:1.5em;}
+.main{top: 45px;}
+.main-top ul li{width: 12%; height: 45px; line-height: 45px; font-size: 1.7em; margin: 20px 9% 10px; border: 5px solid #d1cfcf; border-radius: 45px;}
+.main-top-title{font-size: 1.1em;}
+.main-foot{padding: 40px 0 20px; margin: 40px auto;margin-top:30px;}
+.main-foot p{font-size: 1.1em; line-height: 25px;}
+.main-foot span{display: block; font-size: 2.1em; color: #ff8400; text-align: center;}
+.main-foot ul li{border-right: 1px dashed #ccc;}
+.main-foot ul li h3{font-size:1.2em;}
+.main-foot ul li p{font-size: 1.1em;}
+.main-foot .phone-box li{width: 100%; border: 0;}
+.main-foot .phone-box li p{font-size: 1.5em; color: #949494; word-wrap: break-word; word-break: break-all; text-align: center;}
+.main h3{font-size: 1.3em;margin-top: 0px;}
+.main-top img{width: 100%; height: 81px;}
+.main-foot ul li p{line-height: 25px;}
+.main-top p{font-size: 1.5em;}
+.main-foot img{top:-6px; width: 153px; height: 32px; left:50%; margin-left:-77px!important;/*FF IE7 该值为本身宽的一半 */ }
+}
+
+/*屏幕大于480px小于640px*/
+@media screen and (min-width: 480px) and (max-width: 639px) {
+.prev{height: 60px; line-height: 60px; font-size: 2.2em;}
+.prev a{height: 40px; line-height: 40px; font-size:1.5em;}
+.main{top: 60px;}
+.main-top ul li{width: 12%; height: 60px; line-height: 60px; font-size: 2.3em; margin: 30px 9% 20px; border: 5px solid #d1cfcf; border-radius: 60px;}
+.main-top-title{font-size: 1.5em;}
+.main-foot{width: 90%; margin: 0 auto; background: #ffffff; border-radius: 10px;padding:50px 0 30px; box-shadow: 0 10px #e1e1e1; position: relative; margin-top: 30px;}
+.main-foot p{font-size: 1.6em; line-height: 30px;}
+.main-foot span{display: block; font-size: 2.8em; color: #ff8400; text-align: center;}
+.main-foot ul li{border-right: 2px dashed #ccc;}
+.main-foot ul li h3{font-size:1.9em;}
+.main-foot ul li p{font-size: 1.6em;}
+.main-foot .phone-box li{width: 100%; border: 0;}
+.main-foot .phone-box li p{font-size: 1.5em; color: #949494; word-wrap: break-word; word-break: break-all; text-align: center;}
+.main h3{font-size: 1.7em;margin-top: 10%;}
+.main-top img{width: 100%; height: 111px;}
+.main-foot ul li p{line-height: 30px;}
+.main-top p{font-size: 1.9em;}
+.main-foot img{top:-8px; width: 223px; height: 37px; left:50%; margin-left:-112px!important;/*FF IE7 该值为本身宽的一半 */ }
+}

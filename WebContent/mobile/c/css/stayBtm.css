@@ -1,0 +1,9 @@
+.stayBtm{ 
+ margin:0 auto;
+ position:fixed;
+ _position:absolute;
+ bottom:0; 
+ _margin-top: -1px;
+ _top:expression_r(eval_r(document.compatMode &&document.compatMode=='CSS1Compat') ?documentElement.scrollTop+(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight));
+}
+

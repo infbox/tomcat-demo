@@ -1,12 +1,16 @@
-抓信Tomcat集成示例Demo
+抓信Tomcat集成示例Demo V3.0
 
-抓信是一款个人消息助手APP，您可以在您的web app里面使用抓信SDK。
+抓信是一款个人消息助手APP，您可以基于这个Demo快速发布一个手机应用。
+本Demo用实际代码为您演示了一个典型的抓信插件所具有的7个特征：
+1，跟抓信插件的对接接口 
+2，在手机端显示信息列表
+3，通过手机向后台提交数据
+4，获取附近的人列表
+5，通过微信支付开展电商业务
+6，通过支付宝支付开展电商业务
+7，扫码登录PC端的网页
+8，给用户的抓信APP推送消息
+
+如果您有任何问题，请参考抓信官方教程： https://infbox.github.io
 
 
-
-
-
-
-
-
-This is a J2EE Demo to demonstrate how to integrate InfBox into a tomcat web application 

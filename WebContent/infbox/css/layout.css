@@ -1,0 +1,81 @@
+/*通用部分*/
+*{margin: 0; padding: 0;}
+body{font-family:"微软雅黑" ;}
+img{border: 0;}
+ul{margin: 0; padding: 0; list-style: none;}
+@font-face {
+    font-family:hyczsj;
+    src: url(/hyczsj.ttf);
+}
+
+
+/*主体部分*/
+.main{ width: 100%; min-height: 768px; overflow: hidden;}
+.main h2{background:url(../img/title.png); font-family: hyczsj; font-weight: bold;  width:890px; height: 60px; margin: 0 auto; margin-top: 75px; text-align: center; line-height: 60px; color: #e20000; font-size: 33pt; text-shadow:-2px -2px #fff;}
+.board{ padding: 15px;  height: 332px; margin: 0 auto; margin-top: 70px; position: relative;}
+.pic{ position: absolute; z-index: 999; right:-160px; bottom: -160px;}
+.reconn{
+	border:3px solid #dedede;
+    -moz-border-radius: 10px;  
+    -webkit-border-radius: 10px;  
+    border-radius:10px;  
+    padding:20px;      
+    z-index:9999;
+    background-color:gray;
+    font-size:30px;
+    width:auto;height:auto;
+    position:fixed;
+    bottom:50px;right:490px;
+    display:none;
+}
+/*奖品展示*/
+.board-left{width: 300px; height: 332px; float: left; background:url(../img/leftbg.png) no-repeat right ;}
+.board-left h1, .board-left h3, .board-left span{margin-left: 40px;}
+.board-left h1{ height: 30px; font-size:25pt; margin-top: 47px; margin-bottom: 15px; color: #a40a0a;}
+.board-left h3{font-size: 12pt; margin-bottom: 15px; color: #ef0000;}
+.prize-box{ display: block;  padding: 5px; width: 205px; height: 159px; background: url(../img/prizebg.png);}
+.prize-box img{width: 200px; height: 149px;}
+
+
+/*登陆信息*/
+.login-left{width: 260px; height: 332px; float: left;}
+.login-left h3, .list-center h3, .login-left ul li, .list-center ul li{margin-left: 40px; color: #ce0000;}
+.login-left h3, .list-center h3{margin-top: 40px; margin-bottom: 10px; font-size: 18pt;}
+.login-left ul li, .list-center ul li{font-size: 16pt; margin-bottom: 10px; font-weight: bold;}
+.login-right{ position: relative;  text-align: center;  width: 391px; height: 299px; float:right; margin-top: 20px; margin-right: 20px;}
+
+.login-right span{display: block; position: absolute; left: -130px; top:100px; width: 187px; height: 176px; background: url(../img/picbox.png);}
+.login-right span img{width: 130px; height: 110px; margin-top: 28px; margin-right: 9px; -ms-transform:rotate(-20deg); -moz-transform:rotate(-20deg); -webkit-transform:rotate(-20deg); -o-transform:rotate(-20deg);}
+.login-right span p{margin: 0; padding: 0; width: 130px; margin-left: 22px; font-size: 12px; -ms-transform:rotate(-20deg); -moz-transform:rotate(-20deg); -webkit-transform:rotate(-20deg); -o-transform:rotate(-20deg);}
+#login-list{width: 260px; overflow: hidden;height:240px;}
+
+
+/*底部文字*/
+.foot{ margin-left: 170px; width: 100%; height: 40px; margin-top:30px;}
+.prize-title{ display: block; float: left; margin-right: 20px; font-family: "黑体"; font-size:23pt; color:#8d1711; width: 150px; border-right: 2px solid #c5a7a7; height: 40px; line-height: 40px; text-align: center;}
+#x1{ margin: 0; padding: 0; float: left; width:900px; height: 40px; overflow: hidden; font-family: "黑体"; font-size:20pt; color:#8d1711; line-height: 40px;}
+#x1 ol li{float: left; list-style: none; margin-right: 15px;}
+.xMarquee ol{list-style-type:none; margin:0px; padding:0px; width:100000%;}
+.people{
+	display:none;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+body{
+	width: 1024px;
+}
+/*主体部分*/
+.main{background: url(../img/bg_1024.jpg) no-repeat; width: 100%; min-height: 768px; overflow: hidden;}
+.main h2{background:url(../img/title.png); font-family: hyczsj; font-weight: bold;  width:890px; height: 60px; margin: 0 auto; margin-top: 75px; text-align: center; line-height: 60px; color: #e20000; font-size: 33pt; text-shadow:-2px -2px #fff;}
+.board{background: url(../img/contentbg.png); padding: 15px; width: 860px; height: 332px; margin: 0 auto; margin-top: 70px; position: relative;}
+.pic{ position: absolute; z-index: 999; right:-90px; bottom: -160px;}
+
+
+/*底部文字*/
+.foot{ margin-left: 170px; width: 100%; height: 40px; margin-top:30px; position: relative;}
+.people{
+	display: block;
+	position: absolute;
+	left:-160px;
+	top:-100px
+}

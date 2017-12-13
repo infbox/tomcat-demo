@@ -1,0 +1,121 @@
+/*通用style*/
+*{margin: 0;padding: 0;}
+body{font: normal 62.5% "微软雅黑"; background: #fff;}
+ul{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+/*img {width: 100%;height:auto; width: auto\9; /* ie8 *//*border:0px;}*/
+.nodata{display:none; height:32px; line-height:32px; text-align:center; color:#999; font-size:14px}
+/*顶部返回条style*/
+.prev{width: 95%; height: 80px; line-height: 80px; font-size: 2.9em; color: #fff; background: #ff8400; position: fixed; top: 0; padding-left: 5%; z-index: 999;}
+.prev a{display: block; float: left; color: #fff; height: 60px; line-height: 60px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{width: 20%; height: 56px; line-height: 56px; float: right; margin-right: 5%; margin-top: 12px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 40px; width: 30%; margin:10px 10% 0 5%; float: left;}
+.prev span img.leftimg{float: left;}
+.prev span img.rightimg{float: right;}
+.prev span p{float: right;}
+.body-margin-top{margin-top:80px;}
+.rightimg{background:url('icons.png') no-repeat  -105px -475px;}
+
+/*主体*/
+.main-top{width: 100%; height: 0px; line-height: 85px; background: #ededed; top: 80px; position: fixed;}
+.main-top p{font-size: 2.6em; color: #313131; width: 90%; margin-left: 5%;}
+
+.main-foot{width: 100%; min-height: 50px; overflow: hidden; margin-top: 75px;}
+.main-foot ul li{padding: 20px 5%; border-bottom: 2px solid #ededed; min-height: 50px; overflow: hidden;}
+.main-foot ul li img.pic{width: 26%; height: 160px; margin-right: 5%; float: left;}
+.main-foot ul li div{width:69%; float: right;}
+.main-foot ul li div h2{font-size: 2.6em; color: #303030;}
+.main-foot ul li div p{font-size: 2em; color: #949494; line-height: 35px;}
+.main-foot ul li div p.about{width:100%;  }
+.main-foot ul li div p.grade img{float: left; width: 25px; height: 25px;}
+.main-foot ul li div p.lp{float: left;}
+.main-foot ul li div p.lp img, .main-foot ul li div p.hp img{width: 35px; height: 29px; margin-top: 3px; float: left;}
+.main-foot ul li div p.hp{float: right;}
+
+@media screen and (max-width:320px){
+body{width: 320px;}
+/*顶部返回条style*/
+.prev{width: 320px; height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 20px; line-height: 20px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 20px; width: 30%; margin:10px 10% 0 5%;}
+.body-margin-top{margin-top:40px;}
+/*主体*/
+.main-top{width: 320px; height: 45px; line-height: 45px; top: 40px;}
+.main-top p{font-size: 1.3em;}
+
+.main-foot{margin-top: 40px;}
+.main-foot ul li{padding: 10px 5%;}
+.main-foot ul li img.pic{height: 80px;}
+.main-foot ul li div h2{font-size: 1.3em;}
+.main-foot ul li div p{font-size: 1em; line-height: 20px;}
+.main-foot ul li div p.grade img{float: left; width: 10px; height: 10px; margin-top: 5px;}
+.main-foot ul li div p.lp img, .main-foot ul li div p.hp img{width: 15px; height: 12px; margin-top: 5px;}
+
+}
+
+
+/*屏幕大于320px小于359px*/
+@media screen and (min-width: 320px) and (max-width : 359px){
+body{padding:0;margin:0;}
+/*顶部返回条style*/
+.prev{height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 20px; line-height: 20px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 20px; width: 30%; margin:10px 10% 0 5%;}
+.body-margin-top{margin-top:40px;}
+/*主体*/
+.main-top{height: 45px; line-height: 45px; top: 40px;}
+.main-top p{font-size: 1.3em;}
+
+.main-foot{margin-top: 40px;}
+.main-foot ul li{padding: 10px 5%;}
+.main-foot ul li img.pic{height: 80px;}
+.main-foot ul li div h2{font-size: 1.3em;}
+.main-foot ul li div p{font-size: 1em; line-height: 20px;}
+.main-foot ul li div p.grade img{float: left; width: 10px; height: 10px; margin-top: 5px;}
+.main-foot ul li div p.lp img, .main-foot ul li div p.hp img{width: 15px; height: 12px; margin-top: 5px;}
+
+}
+
+/*屏幕大于360px小于479px*/
+@media screen and (min-width: 360px) and (max-width : 479px){
+/*顶部返回条style*/
+.prev{height: 45px; line-height: 45px; font-size: 1.6em;}
+.prev a{height: 25px; line-height: 25px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 25px; width: 30%; margin:10px 10% 0 5%;}
+.body-margin-top{margin-top:45px;}
+/*主体*/
+.main-top{height: 50px; line-height: 50px; top: 45px;}
+.main-top p{font-size: 1.4em;}
+
+.main-foot{margin-top: 45px;}
+.main-foot ul li{padding: 15px 5%;}
+.main-foot ul li img.pic{height: 90px;}
+.main-foot ul li div h2{font-size: 1.4em;}
+.main-foot ul li div p{font-size: 1.1em; line-height: 25px;}
+.main-foot ul li div p.grade img{float: left; width: 15px; height: 15px; margin-top: 5px;}
+.main-foot ul li div p.lp img, .main-foot ul li div p.hp img{width: 20px; height: 14px; margin-top: 5px;}
+
+}
+/*屏幕大于480px小于640px*/
+@media screen and (min-width: 480px) and (max-width: 639px) {
+/*顶部返回条style*/
+.prev{height: 60px; line-height: 60px; font-size: 2.1em;}
+.prev a{height: 35px; line-height: 35px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 46px; line-height: 46px; margin-top: 6px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 30px; width: 30%; margin:10px 10% 0 5%;}
+.body-margin-top{margin-top:60px;}
+/*主体*/
+.main-top{height: 65px; line-height: 65px; top: 60px;}
+.main-top p{font-size: 1.9em;}
+
+.main-foot{margin-top: 60px;}
+.main-foot ul li{padding: 20px 5%;}
+.main-foot ul li img.pic{height: 120px;}
+.main-foot ul li div h2{font-size: 1.9em;}
+.main-foot ul li div p{font-size: 1.5em; line-height: 30px;}
+.main-foot ul li div p.grade img{float: left; width: 20px; height: 20px; margin-top: 5px;}
+.main-foot ul li div p.lp img, .main-foot ul li div p.hp img{width: 25px; height: 19px; margin-top: 5px;}
+}

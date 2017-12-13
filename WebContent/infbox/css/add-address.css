@@ -1,0 +1,33 @@
+.address-div{
+  padding-top:2%;
+  height:60px;
+}
+.address-div p{
+  float: left;
+  width: 20%;
+  height:48px;
+  font-size:16px;
+  line-height:48px;
+  text-align: right;
+}
+.address-div input{
+  float: left;
+  text-align: left;
+  width: 72%;
+  margin:auto 2%;
+  height:44px;
+}
+
+.address-div select{
+  float: left;
+  text-align: left;
+  width: 72%;
+  margin:auto 2%;
+  height:44px;
+}
+
+.address-div button{
+  width: 96%;
+  margin: 2% 2%;
+  height: 48px;
+}

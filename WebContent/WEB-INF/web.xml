@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"  version="3.0">
+ 	<display-name>infbox demo app</display-name>	
+
+	<servlet>
+		<description>initialize DB Connection</description>
+		<display-name>initDBServlet</display-name>
+		<servlet-name>InitDBServlet</servlet-name>
+		<servlet-class>com.infbox.demo.InitWorkServlet</servlet-class>
+		<init-param>
+			<param-name>mysql_url</param-name>
+			<param-value>jdbc:mysql://localhost:3306/test5</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mysql_user</param-name>
+			<param-value>tom</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mysql_passwd</param-name>
+			<param-value>secret</param-value>
+		</init-param>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+
+	<!--此处设置您的 抓信服务号appid -->
+	<servlet>
+		<servlet-name>InitInfbox</servlet-name>
+		<servlet-class>com.infbox.sdk.InitWorkServlet</servlet-class>
+
+		<init-param>
+			<param-name>infbox_app_id</param-name>
+			<param-value>ib9ztUW9klajbI</param-value>
+		</init-param>
+		<init-param>
+			<param-name>infbox_app_secret</param-name>
+			<param-value>A263C3CD4BC269AA1CC229E6718EE3A5</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>debug_mode</param-name>
+			<param-value>true</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>site_url</param-name>
+			<!--value can not end with /  -->
+			<param-value>http://192.168.0.12:8080/cmBuilder</param-value>
+		</init-param>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+
+	<!--the core server for login function -->
+	<servlet>
+		<servlet-name>Webskt</servlet-name>
+		<servlet-class>com.infbox.sdk.IBWSServer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<async-supported>true</async-supported>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Webskt</servlet-name>
+		<url-pattern>/ws/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QRCodeServlet</servlet-name>
+		<servlet-class>com.infbox.sdk.QRCodeImgServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>QRCodeServlet</servlet-name>
+		<url-pattern>/qrcode</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.infbox.servlet.UserServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/near.action</url-pattern>
+		<url-pattern>/updatePic.action</url-pattern>
+		<url-pattern>/updateName.action</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LiuyanServlet</servlet-name>
+		<servlet-class>com.infbox.demo.article.LiuyanServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LiuyanServlet</servlet-name>
+		<url-pattern>/liuyan/list.action</url-pattern>
+		<url-pattern>/liuyan/del.action</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FriendPayDetailServlet</servlet-name>
+		<servlet-class>com.infbox.pay.FriendPayDetailServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendPayDetailServlet</servlet-name>
+		<url-pattern>/friendpaydetail/list.action</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ArticleCollectServlet</servlet-name>
+		<servlet-class>com.infbox.demo.article.ArticleCollectServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleCollectServlet</servlet-name>
+		<url-pattern>/collect/add.action</url-pattern>
+		<url-pattern>/collect/list.action</url-pattern>
+	</servlet-mapping>	
+
+	<filter>
+		<filter-name>FormFilter</filter-name>
+		<filter-class>com.infbox.filter.FormFilter</filter-class>
+		<async-supported>true</async-supported>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>FormFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.html</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/error.html</location>
+	</error-page>
+
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

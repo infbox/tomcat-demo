@@ -1,0 +1,174 @@
+/*通用style*/
+*{margin: 0;padding: 0;}
+body{font: normal 62.5% "微软雅黑"; background: #ededed;}
+ul{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+img {width: 100%;height:auto; width: auto\9; /* ie8 */border:0px;}
+
+/*顶部返回条style*/
+.prev{width: 95%; height: 80px; line-height: 80px; font-size: 2.9em; color: #fff; background: #ff8400; position: fixed; top: 0; padding-left: 5%; z-index: 999;}
+.prev a{display: block; float: left; color: #fff; height: 60px; line-height: 60px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{width: 20%; height: 56px; line-height: 56px; float: right; margin-right: 5%; margin-top: 12px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 40px; width: 30%; margin:10px 10% 0 5%; float: left;}
+.prev span img.leftimg{float: left;}
+.prev span img.rightimg{float: right;}
+.prev span p{float: right;}
+
+/*主体*/
+.main-foot{width: 100%; min-height: 50px; overflow: hidden; margin-top: 80px; background: #fff;}
+.main-foot ul li{padding: 20px 5%; min-height: 50px; overflow: hidden;}
+.main-foot ul li img.pic{width: 29%; height: 180px; border-radius: 180px; margin-right: 5%; float: left;}
+.main-foot ul li div{width:66%; float: right;}
+.main-foot ul li div span.left{width:100%;}
+.main-foot ul li div a{width:28%; height: 45px; line-height: 45px; font-size: 2.3em; border: 2px solid #FF8400; color: #FF8400; float: left; text-align: center; border-radius: 15px;}
+.main-foot ul li div h2{font-size: 2.6em; color: #303030; margin-top: 20px;}
+.main-foot ul li div p{font-size: 2em; color: #949494; line-height: 35px; margin: 10px 0;}
+.main-foot ul li div p.about{width:70%; float: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.main-foot ul li div p.dq{float: left;}
+.main-foot ul li div p.dq img{width: 35px; height: 29px; margin-top: 3px; float: left;}
+
+.main-center{margin-top: 15px;}
+.main-center ul li{height: 75px; line-height: 75px; font-size: 2.9em; color: #6a6a6a; border-bottom: 2px solid #dadada; background: #fff;}
+.main-center ul li.message{margin-top: 15px; border: 0;}
+.main-center ul li p{float: left; padding-left: 5%;}
+.main-center ul li p img{width: 45px; margin-top: 22px; float: left;}
+.main-center ul li a{float: right; padding-right: 5%; color: #6a6a6a;}
+.main-center ul li.message a.btn{width: 22%; padding: 0; background: #ffdab2; color: #ff8400; text-align: center;}
+.message-box{ margin-top: 12px; color: #949494; position: relative;}
+.message-box textarea{width: 95%; font-size: 2.6em; height: 220px; padding: 20px 0 20px 5%;  maxlength:500; border: 0; resize: none;}
+.message-box .up{width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent;  border-bottom: 20px solid #fff; position: absolute; top: -10px; right: 5%;}
+.message-box span{position: absolute; font-size: 2em; height: 30px; line-height: 30px; bottom: 10px; right: 5%;}
+
+@media screen and (max-width:320px){
+body{width: 320px;}
+/*顶部返回条style*/
+.prev{width: 320px; height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 20px; line-height: 20px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 20px; width: 30%; margin:10px 10% 0 5%;}
+
+/*主体*/
+.main-foot{margin-top: 40px;}
+.main-foot ul li{padding: 10px 5%;}
+.main-foot ul li img.pic{height: 80px;}
+.main-foot ul li div a{height: 20px; line-height: 20px; font-size: 1.1em; border: 2px solid #FF8400; border-radius: 8px;}
+.main-foot ul li div span.left{width: 69%;}
+.main-foot ul li div h2{font-size: 1.3em; margin-top: 5px;}
+.main-foot ul li div p{font-size: 1em; line-height: 20px; margin:3px 0;}
+.main-foot ul li div p.grade{height: 20px;}
+.main-foot ul li div p.grade img{float: left; width: 10px; height: 10px; margin-top: 5px;}
+.main-foot ul li div p.dq,.main-foot ul li div p.sj,.main-foot ul li div p.hy{margin-right: 1%;}
+.main-foot ul li div p.dq img, .main-foot ul li div p.sj img, .main-foot ul li div p.hy img{width:15px; height: 12px; margin-top: 6px;}
+
+.main-center{margin-top: 15px;}
+.main-center ul li{height: 40px; line-height: 40px; font-size: 1.4em;}
+.main-center ul li.message{margin-top: 15px;}
+.main-center ul li p{float: left; padding-left: 5%;}
+.main-center ul li p img{width: 25px; margin-top: 12px; float: left;}
+.main-center ul li a{float: right; padding-right: 5%; color: #6a6a6a;}
+
+.message-box{ margin-top: 12px;}
+.message-box textarea{font-size: 1.3em; height: 120px; padding: 15px 0 15px 5%;}
+.message-box .up{width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent;  border-bottom:30px solid #fff; position: absolute; top: -10px; right: 5%;}
+.message-box span{font-size: 1em; height: 20px; line-height: 20px;}
+}
+
+
+/*屏幕大于320px小于359px*/
+@media screen and (min-width: 320px) and (max-width : 359px){
+body{padding:0;margin:0;}
+/*顶部返回条style*/
+.prev{height: 40px; line-height: 40px; font-size: 1.4em;}
+.prev a{height: 20px; line-height: 20px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 20px; width: 30%; margin:10px 10% 0 5%;}
+
+/*主体*/
+.main-foot{margin-top: 40px;}
+.main-foot ul li{padding: 10px 5%;}
+.main-foot ul li img.pic{height: 80px;}
+.main-foot ul li div a{height: 20px; line-height: 20px; font-size: 1.1em; border: 2px solid #FF8400; border-radius: 8px;}
+.main-foot ul li div span.left{width: 69%;}
+.main-foot ul li div h2{font-size: 1.3em; margin-top: 5px;}
+.main-foot ul li div p{font-size: 1em; line-height: 20px; margin:3px 0;}
+.main-foot ul li div p.grade{height: 20px;}
+.main-foot ul li div p.grade img{float: left; width: 10px; height: 10px; margin-top: 5px;}
+.main-foot ul li div p.dq,.main-foot ul li div p.sj,.main-foot ul li div p.hy{margin-right: 1%;}
+.main-foot ul li div p.dq img, .main-foot ul li div p.sj img, .main-foot ul li div p.hy img{width:15px; height: 12px; margin-top: 6px;}
+
+.main-center{margin-top: 15px;}
+.main-center ul li{height: 40px; line-height: 40px; font-size: 1.4em;}
+.main-center ul li.message{margin-top: 15px;}
+.main-center ul li p{float: left; padding-left: 5%;}
+.main-center ul li p img{width: 25px; margin-top: 12px; float: left;}
+.main-center ul li a{float: right; padding-right: 5%; color: #6a6a6a;}
+
+.message-box{ margin-top: 12px;}
+.message-box textarea{font-size: 1.3em; height: 120px; padding: 15px 0 15px 5%;}
+.message-box .up{width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent;  border-bottom:30px solid #fff; position: absolute; top: -10px; right: 5%;}
+.message-box span{font-size: 1em; height: 20px; line-height: 20px;}
+
+}
+
+/*屏幕大于360px小于479px*/
+@media screen and (min-width: 360px) and (max-width : 479px){
+/*顶部返回条style*/
+.prev{height: 45px; line-height: 45px; font-size: 1.6em;}
+.prev a{height: 25px; line-height: 25px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 36px; line-height: 36px; margin-top: 2px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 25px; width: 30%; margin:10px 10% 0 5%;}
+
+/*主体*/
+.main-foot{margin-top: 45px;}
+.main-foot ul li{padding: 15px 5%;}
+.main-foot ul li img.pic{height: 90px;}
+.main-foot ul li div a{height: 25px; line-height: 25px; font-size: 1.3em; border: 2px solid #FF8400; border-radius: 10px;}
+.main-foot ul li div h2{font-size: 1.4em; margin-top: 10px;}
+.main-foot ul li div p{font-size: 1.1em; line-height: 25px; margin: 0;}
+.main-foot ul li div p.grade{height: 25px;}
+.main-foot ul li div p.grade img{float: left; width: 15px; height: 15px; margin-top: 5px;}
+.main-foot ul li div p.dq,.main-foot ul li div p.sj,.main-foot ul li div p.hy{margin-right: 1%;}
+.main-foot ul li div p.dq img, .main-foot ul li div p.sj img, .main-foot ul li div p.hy img{width: 20px; height: 14px; margin-top: 6px;}
+
+.main-center{margin-top: 15px;}
+.main-center ul li{height: 45px; line-height: 45px; font-size: 1.6em;}
+.main-center ul li.message{margin-top: 15px;}
+.main-center ul li p{float: left; padding-left: 5%;}
+.main-center ul li p img{width: 35px; margin-top: 12px; float: left;}
+.main-center ul li a{float: right; padding-right: 5%; color: #6a6a6a;}
+
+.message-box{ margin-top: 12px;}
+.message-box textarea{font-size: 1.4em; height: 135px; padding: 15px 0 15px 5%;}
+.message-box .up{width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent;  border-bottom:30px solid #fff; position: absolute; top: -10px; right: 5%;}
+.message-box span{font-size: 1.1em; height: 20px; line-height: 20px;}
+
+}
+/*屏幕大于480px小于640px*/
+@media screen and (min-width: 480px) and (max-width: 639px) {
+/*顶部返回条style*/
+.prev{height: 60px; line-height: 60px; font-size: 2.1em;}
+.prev a{height: 35px; line-height: 35px; font-size: 1.75em;  margin: 10px 2%; }
+.prev span{height: 46px; line-height: 46px; margin-top: 6px;}
+.prev span img.leftimg, .prev span img.rightimg{height: 30px; width: 30%; margin:10px 10% 0 5%;}
+
+/*主体*/
+.main-foot{margin-top: 60px;}
+.main-foot ul li{padding: 20px 5%;}
+.main-foot ul li img.pic{height: 120px; border-radius: 120px;}
+.main-foot ul li div a{height: 35px; line-height: 35px; font-size: 1.7em; border: 2px solid #FF8400; border-radius: 15px;}
+.main-foot ul li div h2{font-size: 1.9em; margin-top: 15px;}
+.main-foot ul li div p{font-size: 1.5em; line-height: 30px; margin: 0;}
+.main-foot ul li div p.dq img{width: 25px; height: 19px; margin-top: 6px;}
+
+.main-center{margin-top: 15px;}
+.main-center ul li{height: 60px; line-height: 60px; font-size: 2.2em;}
+.main-center ul li.message{margin-top: 15px;}
+.main-center ul li p{float: left; padding-left: 5%;}
+.main-center ul li p img{width: 45px; margin-top: 15px; float: left;}
+.main-center ul li a{float: right; padding-right: 5%; color: #6a6a6a;}
+
+.message-box{ margin-top: 12px;}
+.message-box textarea{font-size: 1.9em; height: 180px; padding: 20px 0 20px 5%;}
+.message-box .up{width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent;  border-bottom: 20px solid #fff; position: absolute; top: -10px; right: 5%;}
+.message-box span{font-size: 2em; height: 30px; line-height: 30px;}
+}

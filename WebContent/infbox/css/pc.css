@@ -1,0 +1,124 @@
+.mainBg{
+	width:100%;
+	height:100%;
+	background: url(../images/Luckydraw5.png);
+	background-size:cover;	
+	background-repeat:no-repeat;	
+	top:0px;
+	left:0px;
+	}
+.phoneBg{
+	width:80%;
+	height:150px;	
+	background: url(../img/phoneBg.png);
+	background-size:100% 100%;		
+	top:100px;
+	left:10%;
+	margin-left:10%;
+	margin-top:200px;
+	display:none;
+	}
+.num60{
+	margin-left:60px;
+}	
+.num{
+	margin-left:55px;
+	width:50px;
+}
+.num6{
+	margin-left:56px;
+}
+.num7{
+	margin-left:57px;
+}
+.num4{
+	margin-left:54px;
+}
+.num3{
+	margin-left:53px;
+}
+.num38{
+	margin-left:38px;
+}
+#erweima{
+ 	background-image: url("../pic/qbCodeBg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position:fixed;
+    z-index:888;
+    width:480px;
+	height:40%;
+    right:205px;
+    bottom:25%;
+    display:none;
+}
+#erweima img{
+	margin-top:5%;
+	height:80%;
+}
+.gift1{
+	background-image: url("../pic/gift.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position:fixed;
+    z-index:888;
+    width:255px;
+	height:160px;
+    right:5px;
+    bottom:6%;
+   
+}
+
+.actTitle{
+	padding-top:5px;
+	margin-top:50px;
+	background-image: url("../pic/titleBg.png");
+    background-position: 100% 90%;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+	color:#FFFFFF;
+	position:fixed;
+	width:90%;
+	z-index:99999;
+	top:0px;
+	left:0px;
+	font-size:40px;
+	font-weight:bold;
+	height:60px;
+}
+
+.h1{
+	text-shadow: 0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+}
+.sharePage{
+	width:100%;
+	position:fixed;
+	z-index:999999;
+	top:0px;
+	left:0px;
+	background:none;
+	}	
+
+.pdanduanoo{ width:100%; background:url(../images/Luckydraw5.png); background-size:100% 100%; position: fixed; z-index:2000;
+top:0px; left:0px; }	
+
+.board{
+	width:890px;
+	height:50%;
+	 background:url(../pic/board.png);
+	  background-size:100% 100%;
+	   position: fixed; 
+	   z-index:100;
+	bottom:20%;/*+60*/ 
+	left:195px;
+	display:none;
+}

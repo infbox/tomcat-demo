@@ -1,0 +1,24 @@
+.pd5{padding:5px}
+.fl{float:left}
+.fr{float:right}
+#comment{background:#fff}
+#comment h4{display:block;height:40px;line-height:40px;font-weight:500;text-indent:10px;font-size:11px}
+#comment h4 a{color:#696969;margin-left:5px;font-size:11px}
+.comment_me{width:50px;height:50px}
+.comment_me img{width:100%}
+.comment_e{margin-left:55px;height:50px}
+.comment_e .pd5{border:1px solid #b0b0b0;height:38px}
+.comment_e textarea{display:block;width:100%;height:100%;border:none;overflow:hidden}
+.comment_e_w{margin-right:60px}
+.comment_other h4{display:block;height:40px;line-height:40px;font-weight:500;border-bottom:1px solid #e5e5e5}
+#comment ul li{display:block;padding:10px 0;border-bottom:1px solid #e5e5e5}
+#comment ul li .avt{display:block;width:30px;height:50px}
+#comment ul li .avt img{width:100%}.comment_content{margin-left:40px;font-size:12px;line-height:18px}
+.comment_content img,.msg_reply img{display:inline-block;vertical-align:top;width:14px;height:14px}
+.msg_reply img{margin-top:2px}
+.comment_content h5{display:block;font-weight:500;height:25px;line-height:20px;overflow:hidden}
+.comment_content a{color:#1f8902;font-size:12 px}
+.comment_content span{color:#b4b4b4;margin-left:5px}
+.reply_this{color:#ff8a00;font-size:12px;height:20px}
+.comment_p{color:#9c9c9c}.quote{background:#f4f4f4;margin-top:10px}
+.comment_reply{}
