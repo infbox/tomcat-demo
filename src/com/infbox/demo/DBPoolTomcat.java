@@ -31,10 +31,10 @@ public class DBPoolTomcat {
 	}
 
 	private static void initDBPool() {
-		init(3,10);
+		init(3,12);
 	}
 	public static void shutdown(){  
-        ds.shutdown();  
+        ds.close();  
     }  
 	 /** 
      * 初始化连接池 
@@ -44,13 +44,18 @@ public class DBPoolTomcat {
     public static void init(int minimum,int Maximum){  
       	MiscUtil.debug("DB url:"+url);
         HikariConfig config = new HikariConfig();  
-        config.setDriverClassName("com.mysql.jdbc.Driver");  
-        config.setJdbcUrl(url);        
-        config.addDataSourceProperty("cachePrepStmts", true);  
-        config.addDataSourceProperty("prepStmtCacheSize", 500);  
-        config.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);  
-        config.setConnectionTestQuery("SELECT 1");  
-        config.setAutoCommit(true);  
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");  
+        config.setJdbcUrl(url);    
+        config.addDataSourceProperty("cachePrepStmts", true);
+        config.addDataSourceProperty("prepStmtCacheSize", 250);
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);
+        config.setConnectionTestQuery("SELECT 1");
+        config.setLeakDetectionThreshold(15000);
+        config.setConnectionTimeout(60000);
+        config.setValidationTimeout(3000);      
+        config.setMaxLifetime(60000);
+        config.setIdleTimeout(60000);
+        config.setAutoCommit(true);
         //池中最小空闲链接数量  
         config.setMinimumIdle(minimum);  
         //池中最大链接数量  

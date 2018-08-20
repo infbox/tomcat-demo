@@ -80,7 +80,7 @@ public class InitWorkServlet extends HttpServlet {
 		if(mysql_url==null)mysql_url="jdbc:mysql://localhost:3306/shequn";
 		String mysql_user = this.getServletConfig().getInitParameter("mysql_user");
 		String mysql_passwd = this.getServletConfig().getInitParameter("mysql_passwd");
-		String myUrl= mysql_url+"?user="+mysql_user+"&password="+mysql_passwd+"&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false";
+		String myUrl= mysql_url+"?user="+mysql_user+"&password="+mysql_passwd+"&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Hongkong";
 		DBPoolTomcat.setDBUrl(myUrl);
 		
 	}

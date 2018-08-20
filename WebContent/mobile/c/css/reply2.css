@@ -15,7 +15,7 @@ ul,ol{list-style-type:none}h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px}i
 	
 	
 input.hiddenbtn{visibility:hidden;width:0;padding:0;border:0;height:0}
-a.mediumbtn,a.bigbtn,a.smallbtn{background:url(http://www.luck1.net/imgs/sprites1.png) no-repeat scroll left top transparent;text-align:center;display:inline-block;color:#2b2b2b!important;outline:medium none;overflow:hidden;vertical-align:middle;text-decoration:none}
+a.mediumbtn,a.bigbtn,a.smallbtn{background:url(http://lyf.infbox.com/imgs/sprites1.png) no-repeat scroll left top transparent;text-align:center;display:inline-block;color:#2b2b2b!important;outline:medium none;overflow:hidden;vertical-align:middle;text-decoration:none}
 
 
 
@@ -89,7 +89,7 @@ a.last{margin-right:0}.mutilTopad{margin:0 1px;position:relative;text-decoration
 
 
 
-.mainBg,.publicBg{border-top:1px solid #c4d6ec;border-bottom:1px solid #c4d6ec;padding:0 1px;background:url(http://www.luck1.net/imgs/main_bg3.png) repeat-y}
+.mainBg,.publicBg{border-top:1px solid #c4d6ec;border-bottom:1px solid #c4d6ec;padding:0 1px;background:url(http://lyf.infbox.com/imgs/main_bg3.png) repeat-y}
 .main,.publicMain{width:98%;float:center;border:1px solid #c4d6ec;}
 .main .titleBar,.publicMain .titleBar{height:43px;line-height:45px;padding:0 1px;margin:0 20px 0 19px;overflow:hidden;border-bottom:1px solid #e5eef8;clear:both}
 .main .titleBar .squaretext,.publicMain .titleBar .squaretext{display:inline-block;*zoom:1;*display:inline;line-height:normal;text-align:center;margin-top:11px}

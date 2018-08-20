@@ -17,7 +17,7 @@
 <%
 	request.setCharacterEncoding("UTF-8");	
 /**访问抓信的支付宝服务器luck1.net*****/  
-	String  InfBox_Alipay_Host="http://luck1.net/ibpay/";
+	String  InfBox_Alipay_Host="http://lyf.infbox.com/ibpay/";
 	System.out.println("my site id:"+InfBoxUtil.siteId);
  	HashMap<String, Object> params=new HashMap<String, Object>();
  	if(PayUtil.tellMyCallBack==null)PayUtil.tellMyCallBack=false;	

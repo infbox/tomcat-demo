@@ -9,15 +9,15 @@
 		<servlet-class>com.infbox.demo.InitWorkServlet</servlet-class>
 		<init-param>
 			<param-name>mysql_url</param-name>
-			<param-value>jdbc:mysql://localhost:3306/test5</param-value>
+			<param-value>jdbc:mysql://localhost:13306/test5</param-value>
 		</init-param>
 		<init-param>
 			<param-name>mysql_user</param-name>
-			<param-value>tom</param-value>
+			<param-value>demo</param-value>
 		</init-param>
 		<init-param>
 			<param-name>mysql_passwd</param-name>
-			<param-value>secret</param-value>
+			<param-value>123456</param-value>
 		</init-param>
 		<load-on-startup>10</load-on-startup>
 	</servlet>
@@ -44,7 +44,7 @@
 		<init-param>
 			<param-name>site_url</param-name>
 			<!--value can not end with /  -->
-			<param-value>http://192.168.0.12:8080/cmBuilder</param-value>
+			<param-value>http://192.168.1.11:8080/cmBuilder</param-value>
 		</init-param>
 		<load-on-startup>10</load-on-startup>
 	</servlet>

@@ -251,5 +251,46 @@ CREATE TABLE `tb_user` (
   `fans_count` int(11) DEFAULT '0',
   `idol_count` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=82 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `share_pyq`;
+CREATE TABLE `share_pyq` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `type` smallint(1) DEFAULT '0',
+  `content` varchar(2000) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(1000) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `add_time` datetime DEFAULT NULL,
+  `author_id` int(11) NOT NULL,
+  `auhtor_name` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `author_img` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `num` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+DROP TABLE IF EXISTS `pyq_comment`;
+CREATE TABLE `pyq_comment`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `pyq_id` int(11) DEFAULT NULL COMMENT '朋友圈id',
+  `user_id` int(11) DEFAULT NULL COMMENT '当前登录人id',
+  `user_name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '当前登录人名字',
+  `com_text` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '评论内容',
+  `create_time` datetime(0) DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for pyq_like
+-- ----------------------------
+DROP TABLE IF EXISTS `pyq_like`;
+CREATE TABLE `pyq_like`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `pyq_id` int(11) DEFAULT NULL COMMENT '朋友圈id',
+  `user_id` int(11) DEFAULT NULL COMMENT '当前登录人id',
+  `user_name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '当前登录人名字',
+  `state` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `create_time` datetime(0) DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+
 

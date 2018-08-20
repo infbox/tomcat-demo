@@ -1,8 +1,9 @@
 package com.infbox.demo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class MyUser {
+public class MyUser  implements Serializable {
 	//当多个社区共享一个webapp的时候，
 	private long id;
 	private double distance; // 相距多少米

@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.google.gson.Gson;
 import com.infbox.util.BASE64;
+
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
 import com.qiniu.http.Response;
@@ -87,6 +88,20 @@ public class QiNiuUploadUtil {
 		if(param_error )return null;
 		return auth.uploadToken(bucketRoot);   
 	}
+	//客户端申请上传参数	
+	public static String getUploadToken(){		
+	        String bucketName = bucketRoot;
+	        try {
+	        	if(auth==null)auth = Auth.create(ACCESS_KEY, SECRET_KEY);				
+				String uptoken = auth.uploadToken(bucketRoot); 
+				return uptoken;
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.out.println(e.toString());
+			}
+	        return "";
+	}
+		
 	
 	public static void deleteFile(String key) {				
 		if(bucketManager==null) {
